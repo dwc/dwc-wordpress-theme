@@ -4,6 +4,10 @@
 	<meta charset="<?php bloginfo('charset'); ?>">
 	<title><?php wp_title( '|', true, 'right' ); bloginfo( 'name' ); ?></title>
 
+	<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Varela|Merriweather">
+	<link rel="stylesheet" href="<?php bloginfo( 'stylesheet_directory' ); ?>/css/normalize.css">
+	<link rel="stylesheet" href="<?php bloginfo( 'stylesheet_directory' ); ?>/css/screen.css">
+
 	<!--[if lt IE 9]>
 	<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->

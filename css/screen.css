@@ -1,0 +1,53 @@
+body,
+button,
+input,
+select,
+textarea {
+    font-family: 'Varela', sans-serif;
+}
+
+body {
+    width: 916px;
+    margin: 0 auto;
+}
+
+header[role="banner"] {
+    width: 100%;
+    margin-top: 2em;
+}
+
+header[role="banner"] h1 {
+    float: left;
+    margin: 0 0 1em 0;
+}
+
+header[role="banner"] nav {
+    float: right;
+    font-size: 1.2em;
+    margin-top: 0.4em;
+}
+
+header[role="banner"] nav h1 {
+    display: none;
+}
+
+header[role="banner"] nav ul {
+    margin: 0;
+}
+
+header[role="banner"] nav ul li {
+    display: inline;
+    margin-right: 30px;
+}
+
+header[role="banner"] nav ul li:last-child {
+    margin-right: auto;
+}
+
+#content {
+    clear: both;
+}
+
+#content p {
+    font-family: 'Merriweather', serif;
+}
