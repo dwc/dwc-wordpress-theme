@@ -3,9 +3,9 @@
  * Register custom menus used by the theme, including the primary navigation and
  * the navigation in the footer.
  */
-add_action( 'after_setup_theme', 'danieltwc_setup', 11 );
+add_action( 'after_setup_theme', 'dwc_setup', 11 );
 
-function danieltwc_setup() {
+function dwc_setup() {
 	// Remove support for features from the parent theme that don't apply here
 	remove_theme_support( 'post-thumbnails' );
 	remove_custom_background();
@@ -20,9 +20,9 @@ function danieltwc_setup() {
 /*
  * Update built-in sidebars from the parent theme.
  */
-add_action( 'widgets_init', 'danieltwc_setup_widgets', 11 );
+add_action( 'widgets_init', 'dwc_setup_widgets', 11 );
 
-function danieltwc_setup_widgets() {
+function dwc_setup_widgets() {
 	// Reregister the primary widget area to update the before/after markup
 	register_sidebar( array(
 		'id' => 'first-footer-widget-area',
