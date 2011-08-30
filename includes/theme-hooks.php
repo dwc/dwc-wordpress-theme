@@ -15,6 +15,9 @@ function dwc_setup() {
 	register_nav_menus( array(
 		'primary' => __( 'Primary Navigation' ),
 	) );
+
+	// Set the default timezone so ISO8601 timestamps are correct
+	date_default_timezone_set( get_option( 'timezone_string' ) );
 }
 
 /*
