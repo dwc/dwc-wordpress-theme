@@ -2,7 +2,7 @@
 <html <?php language_attributes(); ?>>
 <head>
 	<meta charset="<?php bloginfo('charset'); ?>">
-	<title><?php wp_title( '|', true, 'right' ); bloginfo( 'name' ); ?></title>
+	<title><?php wp_title( '|', true, 'right' ); ?></title>
 
 	<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Varela|Merriweather">
 	<link rel="stylesheet" href="<?php bloginfo( 'stylesheet_directory' ); ?>/css/normalize.css">
