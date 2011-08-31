@@ -52,6 +52,6 @@ header[role="banner"] nav ul li:last-child {
     font-family: 'Merriweather', serif;
 }
 
-section#projects ol li h2 {
+section#projects ul li h2 {
     font-size: 1.17em;
 }

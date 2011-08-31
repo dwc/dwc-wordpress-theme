@@ -8,27 +8,21 @@
 	</section><!-- #blog -->
 <?php endif; ?>
 
-<section id="projects">
-	<h1>Recent Projects</h1>
-	<ol>
-		<li>
-			<h2>Project 1</h2>
-			<p>The path of the righteous man is beset on all sides by the iniquities of the selfish and the tyranny of evil men.</p>
-		</li>
-		<li>
-			<h2>Project 2</h2>
-			<p>The path of the righteous man is beset on all sides by the iniquities of the selfish and the tyranny of evil men.</p>
-		</li>
-		<li>
-			<h2>Project 3</h2>
-			<p>The path of the righteous man is beset on all sides by the iniquities of the selfish and the tyranny of evil men.</p>
-		</li>
-		<li>
-			<h2>Project 4</h2>
-			<p>The path of the righteous man is beset on all sides by the iniquities of the selfish and the tyranny of evil men.</p>
-		</li>
-	</ol>
-</section><!-- #projects -->
+<?php $projects = new WP_Query( 'post_type=dwc_portfolio&tag=featured&posts_per_page=3' ); ?>
+<?php if ( $projects->have_posts() ) : ?>
+	<section id="projects">
+		<h1>Featured Projects</h1>
+		<ul>
+			<?php while ( $projects->have_posts() ) : $projects->the_post(); ?>
+				<li>
+					<h2><?php the_title(); ?></h2>
+					<?php the_content(); ?>
+				</li>
+			<?php endwhile; ?>
+		</ul>
+		<a href="<?php dwc_page_link( 'portfolio' ); ?>">More&hellip;</a>
+	</section><!-- #projects -->
+<?php endif; ?>
 
 <?php get_sidebar(); ?>
 <?php get_footer(); ?>

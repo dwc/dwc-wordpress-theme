@@ -1,5 +1,29 @@
 <?php
 /*
+ * Register the project custom post type.
+ */
+add_action( 'init', 'dwc_setup_portfolio' );
+
+function dwc_setup_portfolio() {
+	register_post_type( 'dwc_portfolio', array(
+		'labels' => array(
+			'name' => __( 'Portfolio' ),
+			'singular_name' => __( 'Project' ),
+		),
+		'public' => true,
+		'has_archive' => true,
+		'rewrite' => array( 'slug' => 'portfolio' ),
+		'supports' => array(
+			'title',
+			'editor',
+			'custom-fields',
+			'revisions',
+		),
+		'taxonomies' => array( 'post_tag' ),
+	) );
+}
+
+/*
  * Register custom menus used by the theme, including the primary navigation and
  * the navigation in the footer.
  */
