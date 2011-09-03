@@ -22,4 +22,4 @@
 			<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
 		</nav>
 	</header>
-	<div id="content">
+	<div role="main">

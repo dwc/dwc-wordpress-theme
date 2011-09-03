@@ -29,10 +29,9 @@ header[role="banner"] {
       header[role="banner"] nav ul li:last-child {
         margin-right: auto; }
 
-#content {
+div[role="main"] {
   clear: both; }
-  #content p {
+  div[role="main"] p {
     font-family: 'Merriweather', serif; }
-
-section#projects ul li h2 {
-  font-size: 1.17em; }
+  div[role="main"] ul li h2 {
+    font-size: 1.17em; }

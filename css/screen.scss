@@ -44,14 +44,14 @@ header[role="banner"] {
     }
 }
 
-#content {
+div[role="main"] {
     clear: both;
 
     p {
         font-family: 'Merriweather', serif;
     }
-}
 
-section#projects ul li h2 {
-    font-size: 1.17em;
+    ul li h2 {
+        font-size: 1.17em;
+    }
 }
