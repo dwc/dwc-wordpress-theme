@@ -35,3 +35,24 @@ div[role="main"] {
     font-family: 'Merriweather', serif; }
   div[role="main"] ul li h2 {
     font-size: 1.17em; }
+
+footer[role="contentinfo"] {
+  margin-top: 2em; }
+  footer[role="contentinfo"] h2 {
+    font-size: 1em;
+    margin: 0;
+    padding: 0 20px 0 0;
+    float: left; }
+  footer[role="contentinfo"] ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0; }
+    footer[role="contentinfo"] ul li {
+      display: inline;
+      margin-right: 10px;
+      padding-right: 10px;
+      border-right: 1px solid #ccc; }
+    footer[role="contentinfo"] ul li:last-child {
+      margin-right: 0;
+      padding-right: 0;
+      border-right: 0; }

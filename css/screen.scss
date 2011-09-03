@@ -55,3 +55,33 @@ div[role="main"] {
         font-size: 1.17em;
     }
 }
+
+footer[role="contentinfo"] {
+    margin-top: 2em;
+
+    h2 {
+        font-size: 1em;
+        margin: 0;
+        padding: 0 20px 0 0;
+        float: left;
+    }
+
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+
+        li {
+            display: inline;
+            margin-right: 10px;
+            padding-right: 10px;
+            border-right: 1px solid #ccc;
+        }
+
+        li:last-child {
+            margin-right: 0;
+            padding-right: 0;
+            border-right: 0;
+        }
+    }
+}
