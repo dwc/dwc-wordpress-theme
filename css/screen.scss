@@ -1,3 +1,5 @@
+$margin: 6em;
+
 body,
 button,
 input,
@@ -13,17 +15,12 @@ body {
 
 header[role="banner"] {
     width: 100%;
-    margin-top: 2em;
-
-    h1 {
-        float: left;
-        margin: 0 0 1em 0;
-    }
+    margin: $margin 0;
 
     nav {
         float: right;
         font-size: 1.2em;
-        margin-top: 0.4em;
+        margin-top: -3em;
 
         h1 {
             display: none;
@@ -31,6 +28,7 @@ header[role="banner"] {
 
         ul {
             margin: 0;
+            padding: 0;
 
             li {
                 display: inline;
@@ -54,19 +52,27 @@ div[role="main"] {
     ul li h2 {
         font-size: 1.17em;
     }
+
+    section {
+        margin-bottom: $margin;
+        padding-bottom: $margin;
+        border-bottom: 1px solid #ccc;
+    }
 }
 
 footer[role="contentinfo"] {
-    margin-top: 2em;
+    margin: $margin 0;
+    text-align: center;
 
     h2 {
+        display: inline;
         font-size: 1em;
         margin: 0;
         padding: 0 20px 0 0;
-        float: left;
     }
 
     ul {
+        display: inline;
         list-style-type: none;
         margin: 0;
         padding: 0;
