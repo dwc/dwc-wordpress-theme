@@ -13,6 +13,10 @@ body {
     margin: 0 auto;
 }
 
+hr {
+    margin: $margin 10%;
+}
+
 header[role="banner"] {
     width: 100%;
     margin: $margin 0;
@@ -52,16 +56,9 @@ div[role="main"] {
     ul li h2 {
         font-size: 1.17em;
     }
-
-    section {
-        margin-bottom: $margin;
-        padding-bottom: $margin;
-        border-bottom: 1px solid #ccc;
-    }
 }
 
 footer[role="contentinfo"] {
-    margin: $margin 0;
     text-align: center;
 
     h2 {

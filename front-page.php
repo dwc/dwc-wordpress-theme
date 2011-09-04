@@ -7,6 +7,8 @@
 	</section><!-- #blog -->
 <?php endif; ?>
 
+<hr>
+
 <?php $projects = new WP_Query( 'post_type=dwc_portfolio&tag=featured&posts_per_page=3' ); ?>
 <?php if ( $projects->have_posts() ) : ?>
 	<section id="projects">

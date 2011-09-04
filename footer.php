@@ -1,4 +1,7 @@
 	</div><!-- role=main -->
+
+	<hr>
+
 	<footer role="contentinfo">
 		<?php if ( ! dynamic_sidebar( 'first-footer-widget-area' ) ) : ?>
 		<?php endif; ?>
