@@ -1,3 +1,7 @@
+/*
+ * Colors based on "Camping cyclist" by piahr
+ * http://kuler.adobe.com/#themeID/1477289
+ */
 body,
 button,
 input,
@@ -7,10 +11,24 @@ textarea {
 
 body {
   width: 916px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  background-color: #fafafa;
+  color: #2d3032; }
+
+a, a:visited {
+  text-decoration: none;
+  color: #dd5f18; }
+
+a:hover, a:active {
+  text-decoration: underline; }
+
+a:active {
+  color: #fba922; }
 
 hr {
-  margin: 6em 10%; }
+  margin: 6em 10%;
+  border-style: solid none none none;
+  border-color: #404333; }
 
 header[role="banner"] {
   width: 100%;
@@ -68,7 +86,7 @@ footer[role="contentinfo"] {
       display: inline;
       margin-right: 10px;
       padding-right: 10px;
-      border-right: 1px solid #ccc; }
+      border-right: 1px solid #404333; }
     footer[role="contentinfo"] ul li:last-child {
       margin-right: 0;
       padding-right: 0;

@@ -1,4 +1,14 @@
+/*
+ * Colors based on "Camping cyclist" by piahr
+ * http://kuler.adobe.com/#themeID/1477289
+ */
+
 $margin: 6em;
+$bg_color: #fafafa;
+$text_color: #2d3032;
+$link_color: #dd5f18;
+$active_color: #fba922;
+$border_color: #404333;
 
 body,
 button,
@@ -11,10 +21,30 @@ textarea {
 body {
     width: 916px;
     margin: 0 auto;
+    background-color: $bg_color;
+    color: $text_color;
+}
+
+a, a:visited {
+    text-decoration: none;
+    color: $link_color;
+}
+
+a:hover, a:active {
+    text-decoration: underline;
+}
+
+a:hover {
+}
+
+a:active {
+    color: $active_color;
 }
 
 hr {
     margin: $margin 10%;
+    border-style: solid none none none;
+    border-color: $border_color;
 }
 
 header[role="banner"] {
@@ -103,7 +133,7 @@ footer[role="contentinfo"] {
             display: inline;
             margin-right: 10px;
             padding-right: 10px;
-            border-right: 1px solid #ccc;
+            border-right: 1px solid $border_color;
         }
 
         li:last-child {
