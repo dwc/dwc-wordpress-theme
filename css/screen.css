@@ -34,8 +34,23 @@ div[role="main"] {
   clear: both; }
   div[role="main"] p {
     font-family: 'Merriweather', serif; }
-  div[role="main"] ul li h2 {
-    font-size: 1.17em; }
+  div[role="main"] section#projects ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0; }
+    div[role="main"] section#projects ul li {
+      display: inline;
+      float: left;
+      width: 30%;
+      margin-right: 5%; }
+      div[role="main"] section#projects ul li h2 {
+        font-size: 1.17em; }
+    div[role="main"] section#projects ul li:last-child {
+      margin-right: 0; }
+  div[role="main"] section#projects .more {
+    clear: both;
+    padding-top: 2em;
+    text-align: right; }
 
 footer[role="contentinfo"] {
   text-align: center; }

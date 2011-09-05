@@ -21,6 +21,7 @@
 				</li>
 			<?php endwhile; ?>
 		</ul>
+		<div class="more"><a href="<?php dwc_page_link( 'portfolio' ); ?>" class="more">More projects&hellip;</a></div>
 	</section><!-- #projects -->
 <?php endif; ?>
 
