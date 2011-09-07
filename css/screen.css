@@ -52,6 +52,10 @@ div[role="main"] {
   clear: both; }
   div[role="main"] p {
     font-family: 'Merriweather', serif; }
+  div[role="main"] article footer, div[role="main"] .more {
+    clear: both;
+    padding-top: 1em;
+    text-align: right; }
   div[role="main"] section#projects ul {
     list-style-type: none;
     margin: 0;
@@ -65,10 +69,6 @@ div[role="main"] {
         font-size: 1.17em; }
     div[role="main"] section#projects ul li:last-child {
       margin-right: 0; }
-  div[role="main"] section#projects .more {
-    clear: both;
-    padding-top: 2em;
-    text-align: right; }
 
 footer[role="contentinfo"] {
   text-align: center; }
