@@ -10,8 +10,6 @@ textarea {
   font-family: 'Varela', sans-serif; }
 
 body {
-  width: 916px;
-  margin: 0 auto;
   background-color: white;
   color: #3c403a; }
 
@@ -30,9 +28,13 @@ hr {
   border-style: solid none none none;
   border-color: #5e7348; }
 
+.wrap {
+  width: 916px;
+  margin: 0 auto; }
+
 header[role="banner"] {
   width: 100%;
-  margin: 6em 0; }
+  margin: 0 0 6em 0; }
   header[role="banner"] nav {
     float: right;
     font-size: 1.2em;
@@ -71,7 +73,14 @@ div[role="main"] {
       margin-right: 0; }
 
 footer[role="contentinfo"] {
-  text-align: center; }
+  margin-top: 6em;
+  padding: 1em 0;
+  background-color: #3c403a;
+  color: white; }
+  footer[role="contentinfo"] a, footer[role="contentinfo"] a:visited {
+    color: #b0d959; }
+  footer[role="contentinfo"] a:active {
+    color: #5d8c16; }
   footer[role="contentinfo"] h2 {
     display: inline;
     font-size: 1em;
@@ -85,9 +94,11 @@ footer[role="contentinfo"] {
     footer[role="contentinfo"] ul li {
       display: inline;
       margin-right: 10px;
-      padding-right: 10px;
-      border-right: 1px solid #5e7348; }
+      padding-right: 10px; }
     footer[role="contentinfo"] ul li:last-child {
       margin-right: 0;
       padding-right: 0;
       border-right: 0; }
+  footer[role="contentinfo"] p#copyright {
+    margin-bottom: 0;
+    font-size: 0.8em; }

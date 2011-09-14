@@ -19,8 +19,6 @@ textarea {
 }
 
 body {
-    width: 916px;
-    margin: 0 auto;
     background-color: $bg_color;
     color: $text_color;
 }
@@ -47,9 +45,14 @@ hr {
     border-color: $border_color;
 }
 
+.wrap {
+    width: 916px;
+    margin: 0 auto;
+}
+
 header[role="banner"] {
     width: 100%;
-    margin: $margin 0;
+    margin: 0 0 $margin 0;
 
     nav {
         float: right;
@@ -114,7 +117,18 @@ div[role="main"] {
 }
 
 footer[role="contentinfo"] {
-    text-align: center;
+    margin-top: $margin;
+    padding: 1em 0;
+    background-color: $text_color;
+    color: $bg_color;
+
+    a, a:visited {
+        color: $active_color;
+    }
+
+    a:active {
+        color: $link_color;
+    }
 
     h2 {
         display: inline;
@@ -133,7 +147,6 @@ footer[role="contentinfo"] {
             display: inline;
             margin-right: 10px;
             padding-right: 10px;
-            border-right: 1px solid $border_color;
         }
 
         li:last-child {
@@ -141,5 +154,10 @@ footer[role="contentinfo"] {
             padding-right: 0;
             border-right: 0;
         }
+    }
+
+    p#copyright {
+        margin-bottom: 0;
+        font-size: 0.8em;
     }
 }

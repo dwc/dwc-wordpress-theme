@@ -15,11 +15,12 @@
 	<?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
-	<header role="banner">
-		<h1><a href="<?php bloginfo( 'url' ); ?>"><?php bloginfo( 'name' ); ?></a></h1>
-		<nav role="navigation">
-			<h1>Navigation</h1>
-			<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
-		</nav>
-	</header>
-	<div role="main">
+	<div class="wrap">
+		<header role="banner">
+			<h1><a href="<?php bloginfo( 'url' ); ?>"><?php bloginfo( 'name' ); ?></a></h1>
+			<nav role="navigation">
+				<h1>Navigation</h1>
+				<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
+			</nav>
+		</header>
+		<div role="main">
