@@ -1,6 +1,6 @@
 /*
- * Colors based on "Camping cyclist" by piahr
- * http://kuler.adobe.com/#themeID/1477289
+ * Colors based on "Green&gray" by karenmc2
+ * http://kuler.adobe.com/#themeID/1084300
  */
 body,
 button,
@@ -12,23 +12,23 @@ textarea {
 body {
   width: 916px;
   margin: 0 auto;
-  background-color: #fafafa;
-  color: #2d3032; }
+  background-color: white;
+  color: #3c403a; }
 
 a, a:visited {
   text-decoration: none;
-  color: #dd5f18; }
+  color: #5d8c16; }
 
 a:hover, a:active {
   text-decoration: underline; }
 
 a:active {
-  color: #fba922; }
+  color: #b0d959; }
 
 hr {
   margin: 6em 10%;
   border-style: solid none none none;
-  border-color: #404333; }
+  border-color: #5e7348; }
 
 header[role="banner"] {
   width: 100%;
@@ -86,7 +86,7 @@ footer[role="contentinfo"] {
       display: inline;
       margin-right: 10px;
       padding-right: 10px;
-      border-right: 1px solid #404333; }
+      border-right: 1px solid #5e7348; }
     footer[role="contentinfo"] ul li:last-child {
       margin-right: 0;
       padding-right: 0;
