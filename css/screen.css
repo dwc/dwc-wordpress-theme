@@ -82,23 +82,39 @@ footer[role="contentinfo"] {
   footer[role="contentinfo"] a:active {
     color: #5d8c16; }
   footer[role="contentinfo"] h2 {
-    display: inline;
-    font-size: 1em;
-    margin: 0;
-    padding: 0 20px 0 0; }
-  footer[role="contentinfo"] ul {
-    display: inline;
-    list-style-type: none;
-    margin: 0;
-    padding: 0; }
-    footer[role="contentinfo"] ul li {
+    font-size: 1em; }
+  footer[role="contentinfo"] .widget {
+    float: left; }
+  footer[role="contentinfo"] .widget_links {
+    width: 696px; }
+    footer[role="contentinfo"] .widget_links h2 {
       display: inline;
-      margin-right: 10px;
-      padding-right: 10px; }
-    footer[role="contentinfo"] ul li:last-child {
-      margin-right: 0;
-      padding-right: 0;
-      border-right: 0; }
+      margin: 0;
+      padding: 0 20px 0 0; }
+    footer[role="contentinfo"] .widget_links ul {
+      display: inline;
+      list-style-type: none;
+      margin: 0;
+      padding: 0; }
+      footer[role="contentinfo"] .widget_links ul li {
+        display: inline;
+        margin-right: 10px;
+        padding-right: 10px; }
+      footer[role="contentinfo"] .widget_links ul li:last-child {
+        margin-right: 0;
+        padding-right: 0;
+        border-right: 0; }
+  footer[role="contentinfo"] .widget_search {
+    margin-bottom: 1em;
+    width: 220px; }
+    footer[role="contentinfo"] .widget_search input[type="search"] {
+      border-radius: 3px;
+      border: 1px solid #aaa;
+      font-size: 0.8em;
+      width: 100%; }
+    footer[role="contentinfo"] .widget_search input[type="submit"] {
+      display: none; }
   footer[role="contentinfo"] p#copyright {
+    clear: both;
     margin-bottom: 0;
     font-size: 0.8em; }

@@ -55,7 +55,7 @@ function dwc_setup_widgets() {
 		'id' => 'first-footer-widget-area',
 		'name' => 'First Footer Widget Area',
 		'description' => 'Widgets in this area will be shown in the footer area.',
-		'before_widget' => '<div class="widget">',
+		'before_widget' => '<div class="widget %2$s">',
 		'after_widget' => '</div><!-- .widget -->',
 		'before_title' => '<h2>',
 		'after_title' => '</h2>',
