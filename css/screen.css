@@ -49,6 +49,10 @@ header[role="banner"] {
         margin-right: 30px; }
       header[role="banner"] nav ul li:last-child {
         margin-right: auto; }
+      header[role="banner"] nav ul li.current-menu-item a, header[role="banner"] nav ul li.current-menu-item a:visited {
+        color: #dd5f18; }
+      header[role="banner"] nav ul li.current-menu-item a:active {
+        color: #fba922; }
 
 div[role="main"] {
   clear: both; }

@@ -75,6 +75,14 @@ header[role="banner"] {
             li:last-child {
                 margin-right: auto;
             }
+
+            li.current-menu-item a, li.current-menu-item a:visited, {
+                color: #dd5f18;
+            }
+
+            li.current-menu-item a:active {
+                color: #fba922;
+            }
         }
     }
 }
