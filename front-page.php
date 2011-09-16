@@ -1,9 +1,12 @@
 <?php get_header(); ?>
 
-<?php if ( have_posts() ) : the_post(); ?>
+<?php $articles = new WP_Query( 'posts_per_page=2' ); ?>
+<?php if ( $articles->have_posts() ) : ?>
 	<section id="blog">
-		<h1><a href="<?php dwc_page_link( 'blog' ); ?>">Blog</a></h1>
-		<?php get_template_part( 'post', 'front-page' ); ?>
+		<h1><a href="<?php dwc_page_link( 'blog' ); ?>">Articles</a></h1>
+		<?php while ( $articles->have_posts() ) : $articles->the_post(); ?>
+			<?php get_template_part( 'post', 'front-page' ); ?>
+		<?php endwhile; ?>
 	</section><!-- #blog -->
 <?php endif; ?>
 
