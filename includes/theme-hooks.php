@@ -35,6 +35,10 @@ function dwc_setup() {
 	remove_custom_background();
 	remove_custom_image_header();
 
+	// Remove hooks added in parent theme (after they are created) for dwc_auto_excerpt_more below
+	remove_filter( 'excerpt_more', 'twentyten_auto_excerpt_more' );
+	remove_filter( 'get_the_excerpt', 'twentyten_custom_excerpt_more' );
+
 	// There is one customizable menu for this theme
 	register_nav_menus( array(
 		'primary' => __( 'Primary Navigation' ),
@@ -67,5 +71,14 @@ function dwc_setup_widgets() {
 	unregister_sidebar( 'second-footer-widget-area' );
 	unregister_sidebar( 'third-footer-widget-area' );
 	unregister_sidebar( 'fourth-footer-widget-area' );
+}
+
+/*
+ * Make the automatic excerpt display cleaner.
+ */
+add_filter( 'excerpt_more', 'dwc_auto_excerpt_more' );
+
+function dwc_auto_excerpt_more( $more ) {
+	return ' <a href="' . get_permalink() . '">&hellip;</a>';
 }
 ?>
