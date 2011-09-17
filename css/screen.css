@@ -115,7 +115,8 @@ footer[role="contentinfo"] {
       border-radius: 3px;
       border: 1px solid #aaa;
       font-size: 0.8em;
-      width: 100%; }
+      width: 100%;
+      background: white url(../images/icon-search.png) no-repeat 99% center; }
     footer[role="contentinfo"] .widget_search input[type="submit"] {
       display: none; }
   footer[role="contentinfo"] p#copyright {
