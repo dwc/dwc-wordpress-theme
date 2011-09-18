@@ -42,15 +42,24 @@ div[role="main"] {
   div[role="main"] section#projects ul li:last-child {
     margin-right: 0; }
 
-footer[role="contentinfo"] .widget {
-  float: left; }
-footer[role="contentinfo"] .widget_links {
-  width: 696px; }
-  footer[role="contentinfo"] .widget_links h2 {
-    display: inline; }
-footer[role="contentinfo"] .widget_search {
-  width: 220px; }
-  footer[role="contentinfo"] .widget_search input[type="search"] {
-    width: 100%; }
-footer[role="contentinfo"] p#copyright {
-  clear: both; }
+footer[role="contentinfo"] {
+  text-align: left; }
+  footer[role="contentinfo"] .widget {
+    float: left; }
+  footer[role="contentinfo"] .widget_links {
+    width: 696px; }
+    footer[role="contentinfo"] .widget_links h2 {
+      display: inline;
+      padding: 0 20px 0 0; }
+    footer[role="contentinfo"] .widget_links ul li {
+      margin-right: 20px; }
+    footer[role="contentinfo"] .widget_links ul li:last-child {
+      margin-right: 0; }
+  footer[role="contentinfo"] .widget_search {
+    width: 220px; }
+    footer[role="contentinfo"] .widget_search input[type="search"] {
+      margin-top: 0;
+      width: 197px;
+      /* 23px for padding-left and border-radius */ }
+  footer[role="contentinfo"] p#copyright {
+    clear: both; }

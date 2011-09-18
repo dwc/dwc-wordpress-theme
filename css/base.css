@@ -65,8 +65,7 @@ footer[role="contentinfo"] {
   footer[role="contentinfo"] h2 {
     font-size: 1em; }
   footer[role="contentinfo"] .widget_links h2 {
-    margin: 0;
-    padding: 0 20px 0 0; }
+    margin: 0; }
   footer[role="contentinfo"] .widget_links ul {
     display: inline;
     list-style-type: none;
@@ -74,12 +73,9 @@ footer[role="contentinfo"] {
     padding: 0; }
     footer[role="contentinfo"] .widget_links ul li {
       display: inline;
-      margin-right: 10px;
-      padding-right: 10px; }
+      margin-right: 10px; }
     footer[role="contentinfo"] .widget_links ul li:last-child {
-      margin-right: 0;
-      padding-right: 0;
-      border-right: 0; }
+      margin-right: 0; }
   footer[role="contentinfo"] .widget_search {
     margin-bottom: 1em; }
     footer[role="contentinfo"] .widget_search input[type="search"] {

@@ -32,3 +32,11 @@ header[role="banner"] {
 div[role="main"] section#projects ul {
   margin: 0;
   padding: 0; }
+
+footer[role="contentinfo"] {
+  text-align: center; }
+  footer[role="contentinfo"] .widget_links ul li {
+    font-size: 0.8em; }
+  footer[role="contentinfo"] .widget_search input[type="search"] {
+    margin-top: 1em;
+    width: 60%; }

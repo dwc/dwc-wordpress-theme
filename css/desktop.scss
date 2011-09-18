@@ -41,6 +41,8 @@ div[role="main"] {
 }
 
 footer[role="contentinfo"] {
+    text-align: left;
+
     .widget {
         float: left;
     }
@@ -50,14 +52,27 @@ footer[role="contentinfo"] {
 
         h2 {
             display: inline;
+            padding: 0 20px 0 0;
+        }
+
+        ul {
+            li {
+                margin-right: 20px;
+            }
+
+            li:last-child {
+                margin-right: 0;
+            }
         }
     }
 
     .widget_search {
-        width: 220px;
+        $width: 220px;
+        width: $width;
 
         input[type="search"] {
-            width: 100%;
+            margin-top: 0;
+            width: $width - 23px;  /* 23px for padding-left and border-radius */
         }
     }
 

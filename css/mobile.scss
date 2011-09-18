@@ -26,3 +26,16 @@ div[role="main"] {
         }
     }
 }
+
+footer[role="contentinfo"] {
+    text-align: center;
+
+    .widget_links ul li {
+        font-size: 0.8em;
+    }
+
+    .widget_search input[type="search"] {
+        margin-top: 1em;
+        width: 60%;
+    }
+}
