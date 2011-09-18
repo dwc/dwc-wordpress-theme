@@ -74,6 +74,68 @@ function dwc_setup_widgets() {
 }
 
 /*
+ * Add the Google Analytics code to the header, if configured.
+ */
+add_filter( 'wp_head', 'dwc_google_analytics' );
+
+function dwc_google_analytics() {
+	if ( $google_analytics_account = dwc_get_option( 'google_analytics_account' ) ) {
+?>
+<script type="text/javascript">
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', '<?php esc_attr_e( $google_analytics_account ); ?>']);
+	_gaq.push(['_trackPageview']);
+
+	(function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	})();
+</script>
+<?php
+	}
+}
+
+/*
+ * Add the Google site verification code to the header, if configured.
+ */
+add_filter( 'wp_head', 'dwc_google_site_verification' );
+
+function dwc_google_site_verification() {
+	if ( $google_site_verification = dwc_get_option( 'google_site_verification' ) ) {
+?>
+<meta name="google-site-verification" content="<?php esc_attr_e( $google_site_verification ); ?>" />
+<?php
+	}
+}
+
+/*
+ * Add the OpenID code to the header, if configured.
+ */
+add_filter( 'wp_head', 'dwc_openid' );
+
+function dwc_openid() {
+	$openid_provider = dwc_get_option( 'openid_provider' );
+	$openid_delegate = dwc_get_option( 'openid_delegate' );
+
+	if ( $openid_provider && $openid_delegate ) {
+?>
+<!-- See http://danielmiessler.com/blog/verisign-pip-openid-delegation-code -->
+<link rel="openid.server" href="<?php esc_attr_e( $openid_provider ); ?>" />
+<link rel="openid.delegate" href="<?php esc_attr_e( $openid_delegate ); ?>" />
+<link rel="openid2.provider openid.server" href="<?php esc_attr_e( $openid_provider ); ?>" />
+<link rel="openid2.local_id openid.delegate" href="<?php esc_attr_e( $openid_delegate ); ?>" />
+<?php
+	}
+
+	if ( $openid_xrds_location = dwc_get_option( 'openid_xrds_location' ) ) {
+?>
+<meta name="X-XRDS-Location" content="<?php esc_attr_e( $openid_xrds_location ); ?>" />
+<?php
+	}
+}
+
+/*
  * Make the automatic excerpt display cleaner.
  */
 add_filter( 'excerpt_more', 'dwc_auto_excerpt_more' );

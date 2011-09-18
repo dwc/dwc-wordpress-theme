@@ -8,4 +8,13 @@ function dwc_page_link( $page_path ) {
 
 	esc_attr_e( get_page_link( $page->ID ) );
 }
+
+/*
+ * Get a theme-specific option.
+ */
+function dwc_get_option($option_name) {
+	$options = get_option('dwc_theme_options');
+
+	return $options[$option_name];
+}
 ?>
