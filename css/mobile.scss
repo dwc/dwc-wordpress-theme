@@ -2,6 +2,22 @@
 @include margins(2em);
 @include heading-sizes(1.5em);
 
+.wrap {
+    margin: 0 0.5em;
+}
+
+header[role="banner"] {
+    text-align: center;
+
+    h1 {
+        margin-bottom: 0.5em;
+    }
+
+    nav ul li {
+        margin-right: 15px;
+    }
+}
+
 div[role="main"] {
     section#projects {
         ul {

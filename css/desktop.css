@@ -23,10 +23,14 @@ section article header h1, section h2 {
   width: 916px;
   margin: 0 auto; }
 
-header[role="banner"] nav {
-  float: right;
-  margin-top: -3em;
-  font-size: 1.2em; }
+header[role="banner"] {
+  text-align: left; }
+  header[role="banner"] nav {
+    float: right;
+    margin-top: -3em;
+    font-size: 1.2em; }
+    header[role="banner"] nav ul li {
+      margin-right: 30px; }
 
 div[role="main"] {
   clear: both; }

@@ -8,10 +8,16 @@
 }
 
 header[role="banner"] {
+    text-align: left;
+
     nav {
         float: right;
         margin-top: -3em;
         font-size: 1.2em;
+
+        ul li {
+            margin-right: 30px;
+        }
     }
 }
 

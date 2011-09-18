@@ -19,6 +19,16 @@ article header h1, section h1 {
 section article header h1, section h2 {
   font-size: 0.878em; }
 
+.wrap {
+  margin: 0 0.5em; }
+
+header[role="banner"] {
+  text-align: center; }
+  header[role="banner"] h1 {
+    margin-bottom: 0.5em; }
+  header[role="banner"] nav ul li {
+    margin-right: 15px; }
+
 div[role="main"] section#projects ul {
   margin: 0;
   padding: 0; }
