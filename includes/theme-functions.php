@@ -10,10 +10,29 @@ function dwc_page_link( $page_path ) {
 }
 
 /*
+ * Display the link to the portfolio item, or just the title if no link is set.
+ */
+function dwc_portfolio_link() {
+	global $post;
+
+	$url = get_post_meta( $post->ID, 'url', true );
+
+	if ( $url ) {
+		echo '<a href="' . esc_attr( $url ) . '">';
+	}
+
+	the_title();
+
+	if ( $url ) {
+		echo '</a>';
+	}
+}
+
+/*
  * Get a theme-specific option.
  */
-function dwc_get_option($option_name) {
-	$options = get_option('dwc_theme_options');
+function dwc_get_option( $option_name ) {
+	$options = get_option( 'dwc_theme_options' );
 
 	return $options[$option_name];
 }

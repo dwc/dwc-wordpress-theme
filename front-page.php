@@ -19,8 +19,7 @@
 		<ul>
 			<?php while ( $projects->have_posts() ) : $projects->the_post(); ?>
 				<li>
-					<h2><?php the_title(); ?></h2>
-					<?php the_content(); ?>
+					<?php get_template_part( 'post', 'portfolio' ); ?>
 				</li>
 			<?php endwhile; ?>
 		</ul>

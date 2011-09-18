@@ -11,6 +11,7 @@ function dwc_setup_portfolio() {
 			'singular_name' => __( 'Project' ),
 		),
 		'public' => true,
+		'exclude_from_search' => true,
 		'has_archive' => false,
 		'rewrite' => array( 'slug' => 'portfolio' ),
 		'supports' => array(
