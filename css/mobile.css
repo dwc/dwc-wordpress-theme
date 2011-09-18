@@ -1,0 +1,21 @@
+hr {
+  margin: 2em 10%; }
+
+header[role="banner"] {
+  margin: 0 0 2em 0; }
+
+footer[role="contentinfo"] {
+  margin-top: 2em; }
+
+h1 {
+  font-size: 1.5em; }
+
+article header h1, section h1 {
+  font-size: 1.125em; }
+
+section article header h1, section h2 {
+  font-size: 0.878em; }
+
+div[role="main"] section#projects ul {
+  margin: 0;
+  padding: 0; }

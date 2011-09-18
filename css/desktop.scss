@@ -1,0 +1,61 @@
+@import "mixins.scss";
+@include margins(6em);
+@include heading-sizes(2em);
+
+.wrap {
+    width: 916px;
+    margin: 0 auto;
+}
+
+header[role="banner"] {
+    nav {
+        float: right;
+        margin-top: -3em;
+        font-size: 1.2em;
+    }
+}
+
+div[role="main"] {
+    clear: both;
+
+    section#projects {
+        ul {
+            li {
+                display: inline;
+                float: left;
+                width: 30%;
+                margin-right: 5%;
+            }
+
+            li:last-child {
+                margin-right: 0;
+            }
+        }
+    }
+}
+
+footer[role="contentinfo"] {
+    .widget {
+        float: left;
+    }
+
+    .widget_links {
+        width: 696px;
+
+        h2 {
+            display: inline;
+        }
+    }
+
+    .widget_search {
+        width: 220px;
+
+        input[type="search"] {
+            width: 100%;
+        }
+    }
+
+    p#copyright {
+        clear: both;
+    }
+}

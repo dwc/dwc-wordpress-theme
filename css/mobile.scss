@@ -1,0 +1,12 @@
+@import "mixins.scss";
+@include margins(2em);
+@include heading-sizes(1.5em);
+
+div[role="main"] {
+    section#projects {
+        ul {
+            margin: 0;
+            padding: 0;
+        }
+    }
+}
