@@ -116,7 +116,8 @@ footer[role="contentinfo"] {
       border: 1px solid #aaa;
       font-size: 0.8em;
       width: 100%;
-      background: white url(../images/icon-search.png) no-repeat 99% center; }
+      padding-left: 20px;
+      background: white url(../images/icon-search.png) no-repeat 1% center; }
     footer[role="contentinfo"] .widget_search input[type="submit"] {
       display: none; }
   footer[role="contentinfo"] p#copyright {
