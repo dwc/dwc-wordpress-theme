@@ -42,6 +42,9 @@ div[role="main"] {
   div[role="main"] section#projects ul li:last-child {
     margin-right: 0; }
 
+@media screen and (min-height: 700px) {
+  div[role="main"] {
+    min-height: 700px; } }
 footer[role="contentinfo"] {
   text-align: left; }
   footer[role="contentinfo"] .widget {

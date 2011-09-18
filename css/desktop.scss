@@ -40,6 +40,12 @@ div[role="main"] {
     }
 }
 
+@media screen and (min-height: 700px) {
+    div[role="main"] {
+        min-height: 700px;
+    }
+}
+
 footer[role="contentinfo"] {
     text-align: left;
 
