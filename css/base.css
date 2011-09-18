@@ -47,8 +47,8 @@ header[role="banner"] {
 div[role="main"] p {
   font-family: 'Merriweather', serif; }
 div[role="main"] article footer, div[role="main"] .more {
-  padding-top: 1em;
-  text-align: right; }
+  text-align: right;
+  font-size: 12px; }
 div[role="main"] .more {
   clear: both; }
 div[role="main"] section#projects ul {

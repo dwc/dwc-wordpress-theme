@@ -1,8 +1,11 @@
 hr {
-  margin: 2em 10%; }
+  margin: 1em 10% 2em 10%; }
 
 header[role="banner"] {
   margin: 0 0 2em 0; }
+
+div[role="main"] article footer, div[role="main"] .more {
+  padding-bottom: 1em; }
 
 footer[role="contentinfo"] {
   margin-top: 2em; }
