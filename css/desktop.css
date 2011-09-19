@@ -25,6 +25,8 @@ section article header h1, section h2 {
 
 header[role="banner"] {
   text-align: left; }
+  header[role="banner"] h1 {
+    margin-bottom: 0.67em; }
   header[role="banner"] nav {
     float: right;
     margin-top: -3em;
