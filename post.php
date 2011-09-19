@@ -9,8 +9,10 @@
 		<?php the_excerpt(); ?>
 	<?php endif; ?>
 
-	<footer>
-		Posted on <?php get_template_part( 'time' ); ?>
-		<?php edit_post_link( __( 'Edit', 'twentyten' ), '', '' ); ?>
-	</footer>
+	<?php if ( !is_page() || current_user_can( 'edit_pages' ) ) : ?>
+		<footer>
+			<?php if ( !is_page() ) : ?>Posted on <?php get_template_part( 'time' ); ?><?php endif; ?>
+			<?php edit_post_link( __( 'Edit', 'twentyten' ), '', '' ); ?>
+		</footer>
+	<?php endif; ?>
 </article>
