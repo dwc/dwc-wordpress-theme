@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<?php query_posts( array() ); ?>
+<?php query_posts( array( 'posts_per_page' => -1 ) ); ?>
 
 <?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
 	<?php get_template_part( 'post', 'blog' ); ?>

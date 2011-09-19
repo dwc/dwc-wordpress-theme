@@ -5,6 +5,7 @@ query_posts( array(
     'post_type' => 'dwc_portfolio',
     'orderby' => 'title',
     'order' => 'ASC',
+    'posts_per_page' => -1,
 ) );
 ?>
 
