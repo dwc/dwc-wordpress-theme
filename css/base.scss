@@ -8,13 +8,21 @@ $text_color: #3c403a;
 $link_color: #5d8c16;
 $active_color: #b0d959;
 $border_color: #5e7348;
+$serif_font: 'Merriweather';
+$sans_serif_font: 'Varela';
 
 body,
 button,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
 input,
 select,
 textarea {
-    font-family: 'Varela', sans-serif;
+    font-family: $sans_serif_font, sans-serif;
 }
 
 body {
@@ -76,12 +84,11 @@ header[role="banner"] {
 }
 
 div[role="main"] {
-    p {
-        font-family: 'Merriweather', serif;
-    }
+    font-family: $serif_font, serif;
 
     article footer, .more {
         text-align: right;
+        font-family: $sans_serif_font, sans-serif;
         font-size: 12px;
     }
 
