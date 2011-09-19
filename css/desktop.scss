@@ -28,6 +28,12 @@ header[role="banner"] {
 div[role="main"] {
     clear: both;
 
+    form {
+        input, textarea {
+            width: 40%;
+        }
+    }
+
     section#projects {
         ul {
             li {

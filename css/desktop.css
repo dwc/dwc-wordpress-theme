@@ -36,6 +36,8 @@ header[role="banner"] {
 
 div[role="main"] {
   clear: both; }
+  div[role="main"] form input, div[role="main"] form textarea {
+    width: 40%; }
   div[role="main"] section#projects ul li {
     display: inline;
     float: left;

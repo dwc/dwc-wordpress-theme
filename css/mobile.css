@@ -29,6 +29,10 @@ header[role="banner"] {
   header[role="banner"] nav ul li {
     margin-right: 15px; }
 
+div[role="main"] form input, div[role="main"] form textarea {
+  width: 90%; }
+div[role="main"] form input[type="submit"] {
+  width: auto; }
 div[role="main"] section#projects ul {
   margin: 0;
   padding: 0; }
