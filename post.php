@@ -11,5 +11,6 @@
 
 	<footer>
 		Posted on <?php get_template_part( 'time' ); ?>
+		<?php edit_post_link( __( 'Edit', 'twentyten' ), '', '' ); ?>
 	</footer>
 </article>
