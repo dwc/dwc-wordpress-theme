@@ -4,7 +4,7 @@
 <?php query_posts( array( 'posts_per_page' => 2 ) ); ?>
 <?php if ( have_posts() ) : ?>
 	<section id="blog">
-		<h1><a href="<?php dwc_page_link( 'blog' ); ?>">Articles</a></h1>
+		<h1><a href="<?php dwc_page_link( 'blog' ); ?>">Blog</a></h1>
 		<?php while ( have_posts() ) : the_post(); ?>
 			<?php get_template_part( 'post', 'home' ); ?>
 		<?php endwhile; ?>
