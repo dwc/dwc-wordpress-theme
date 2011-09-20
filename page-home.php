@@ -1,4 +1,4 @@
-<?php get_header(); ?>
+<?php get_header( 'base' ); ?>
 
 <?php /* Use query_posts to replace main query so is_page checks in post.php work */ ?>
 <?php query_posts( array( 'posts_per_page' => 2 ) ); ?>
@@ -36,4 +36,4 @@ $projects = new WP_Query( array(
 <?php endif; ?>
 
 <?php get_sidebar(); ?>
-<?php get_footer(); ?>
+<?php get_footer( 'base' ); ?>
