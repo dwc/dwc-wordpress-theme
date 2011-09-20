@@ -11,7 +11,7 @@
 
 	<?php if ( !is_page() || current_user_can( 'edit_pages' ) ) : ?>
 		<footer>
-			<?php if ( !is_page() ) : ?>Posted on <?php get_template_part( 'time' ); ?><?php endif; ?>
+			<?php if ( !is_page() ) : ?>Posted on <?php get_template_part( 'time' ); ?> in <?php the_category( ', ' ); ?>.<?php endif; ?>
 			<?php edit_post_link( __( 'Edit', 'twentyten' ), '', '' ); ?>
 		</footer>
 	<?php endif; ?>
