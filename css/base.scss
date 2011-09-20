@@ -100,6 +100,16 @@ div[role="main"] {
         list-style-type: none;
     }
 
+    .paging {
+        font-family: $sans_serif_font, sans-serif;
+        text-align: center;
+        padding: 1em 0;
+
+        a:first-child {
+            padding-right: 1em;
+        }
+    }
+
     /*
      * WordPress core CSS classes for rich text editor, from:
      * http: //codex.wordpress.org/CSS

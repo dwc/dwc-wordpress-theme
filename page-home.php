@@ -1,18 +1,16 @@
 <?php get_header(); ?>
 
-<?php
-$articles = new WP_Query( array(
-    'posts_per_page' => 2,
-) );
-?>
-<?php if ( $articles->have_posts() ) : ?>
+<?php /* Use query_posts to replace main query so is_page checks in post.php work */ ?>
+<?php query_posts( array( 'posts_per_page' => 2 ) ); ?>
+<?php if ( have_posts() ) : ?>
 	<section id="blog">
 		<h1><a href="<?php dwc_page_link( 'blog' ); ?>">Articles</a></h1>
-		<?php while ( $articles->have_posts() ) : $articles->the_post(); ?>
-			<?php get_template_part( 'post', 'front-page' ); ?>
+		<?php while ( have_posts() ) : the_post(); ?>
+			<?php get_template_part( 'post', 'home' ); ?>
 		<?php endwhile; ?>
 	</section><!-- #blog -->
 <?php endif; ?>
+<?php wp_reset_query(); ?>
 
 <hr>
 
