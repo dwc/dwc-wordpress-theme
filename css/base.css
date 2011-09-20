@@ -62,8 +62,13 @@ div[role="main"] {
     font-size: 12px; }
   div[role="main"] .more {
     clear: both; }
-  div[role="main"] section#projects ul {
+  div[role="main"] section#projects ul, div[role="main"] ol#portfolio {
     list-style-type: none; }
+  div[role="main"] ol#portfolio {
+    margin: 0;
+    padding: 0; }
+    div[role="main"] ol#portfolio li {
+      margin-bottom: 2em; }
   div[role="main"] .paging {
     font-family: "Varela", sans-serif;
     text-align: center;

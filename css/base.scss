@@ -96,8 +96,17 @@ div[role="main"] {
         clear: both;
     }
 
-    section#projects ul {
+    section#projects ul, ol#portfolio {
         list-style-type: none;
+    }
+
+    ol#portfolio {
+        margin: 0;
+        padding: 0;
+
+        li {
+            margin-bottom: 2em;
+        }
     }
 
     .paging {

@@ -11,9 +11,15 @@ query_posts( array(
 
 <h1>Portfolio</h1>
 
-<?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
-	<?php get_template_part( 'post', 'portfolio' ); ?>
-<?php endwhile; ?>
+<?php if ( have_posts() ) : ?>
+	<ol id="portfolio">
+		<?php while ( have_posts() ) : the_post(); ?>
+			<li>
+				<?php get_template_part( 'post', 'portfolio' ); ?>
+			</li>
+		<?php endwhile; ?>
+	</ol>
+<?php endif; ?>
 
 <?php wp_reset_query(); ?>
 
