@@ -36,4 +36,37 @@ function dwc_get_option( $option_name ) {
 
 	return $options[$option_name];
 }
+
+function dwc_comment( $comment, $args, $depth ) {
+	$GLOBALS['comment'] = $comment;
+
+	switch ( $comment->comment_type ) :
+	case '' :
+?>
+<div class="comment">
+	<article id="comment-<?php comment_ID(); ?>">
+		<header>
+			<h1>Comment from <?php comment_author_link(); ?> on <time datetime="<?php comment_date( 'c' ); ?>"><?php comment_date( get_option( 'date_format' ) ); ?></time></h1>
+		</header>
+
+		<?php comment_text(); ?>
+
+		<footer>
+			<?php if ( $comment->comment_approved == '0' ) : ?>
+				<em><?php _e( 'Your comment is awaiting moderation.', 'twentyten' ); ?></em>
+			<?php endif; ?>
+			<?php comment_reply_link( array_merge( $args, array( 'depth' => $depth, 'max_depth' => $args['max_depth'] ) ) ); ?>
+		</footer>
+	</article>
+<?php
+		break;
+
+		case 'pingback'  :
+		case 'trackback' :
+?>
+<p><?php _e( 'Pingback:', 'twentyten' ); ?> <?php comment_author_link(); ?><?php edit_comment_link( __('(Edit)', 'twentyten'), ' ' ); ?></p>
+<?php
+		break;
+	endswitch;
+}
 ?>

@@ -119,6 +119,24 @@ div[role="main"] {
         }
     }
 
+    section#comments {
+        font-size: 0.8em;
+
+        div.comment > div.comment {
+            padding-left: 2em;
+        }
+    }
+
+    #respond {
+        font-size: 0.8em;
+
+        form {
+            label {
+                display: block;
+            }
+        }
+    }
+
     /*
      * WordPress core CSS classes for rich text editor, from:
      * http: //codex.wordpress.org/CSS

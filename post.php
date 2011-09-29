@@ -11,8 +11,13 @@
 
 	<?php if ( !is_page() || current_user_can( 'edit_pages' ) ) : ?>
 		<footer>
-			<?php if ( !is_page() ) : ?>Posted on <?php get_template_part( 'time' ); ?> in <?php the_category( ', ' ); ?>.<?php endif; ?>
+			<?php if ( !is_page() ) : ?>
+				Posted on <?php get_template_part( 'time' ); ?> in <?php the_category( ', ' ); ?>.
+				<a href="<?php comments_link(); ?>"><?php comments_number( 'No comments', 'One comment', '% comments' ); ?></a>.
+			<?php endif; ?>
 			<?php edit_post_link( __( 'Edit', 'twentyten' ), '', '' ); ?>
 		</footer>
 	<?php endif; ?>
+
+	<?php comments_template( '', true ); ?>
 </article>

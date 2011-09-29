@@ -75,6 +75,14 @@ div[role="main"] {
     padding: 1em 0; }
     div[role="main"] .paging a:first-child {
       padding-right: 1em; }
+  div[role="main"] section#comments {
+    font-size: 0.8em; }
+    div[role="main"] section#comments div.comment > div.comment {
+      padding-left: 2em; }
+  div[role="main"] #respond {
+    font-size: 0.8em; }
+    div[role="main"] #respond form label {
+      display: block; }
   div[role="main"] .alignnone {
     margin: 5px 20px 20px 0; }
   div[role="main"] .aligncenter, div[role="main"] div.aligncenter {
