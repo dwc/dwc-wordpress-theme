@@ -57,12 +57,14 @@ div[role="main"] {
    * WordPress core CSS classes for rich text editor, from:
    * http: //codex.wordpress.org/CSS
    */ }
-  div[role="main"] article footer, div[role="main"] .more {
-    text-align: right;
+  div[role="main"] article header ul.metadata {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
     font-family: "Varela Round", sans-serif;
-    font-size: 12px; }
-  div[role="main"] .more {
-    clear: both; }
+    color: #999; }
+    div[role="main"] article header ul.metadata li {
+      display: inline; }
   div[role="main"] section#projects ul, div[role="main"] ol#portfolio {
     list-style-type: none; }
   div[role="main"] ol#portfolio {
@@ -70,6 +72,9 @@ div[role="main"] {
     padding: 0; }
     div[role="main"] ol#portfolio li {
       margin-bottom: 2em; }
+  div[role="main"] .more {
+    font-family: "Varela Round", sans-serif;
+    font-size: 0.9em; }
   div[role="main"] .paging {
     font-family: "Varela Round", sans-serif;
     text-align: center;

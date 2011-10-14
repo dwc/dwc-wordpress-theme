@@ -1,6 +1,6 @@
-@mixin margins($margin, $end_padding: 1em) {
+@mixin margins($margin) {
     hr {
-        margin: ($margin - $end_padding) 10% $margin 10%;
+        margin: $margin 10% $margin 10%;
     }
 
     header[role="banner"] {
@@ -8,8 +8,8 @@
     }
 
     div[role="main"] {
-        article footer, .more {
-            padding-bottom: $end_padding;
+        article, section#projects {
+            margin-bottom: $margin;
         }
     }
 

@@ -4,8 +4,8 @@ hr {
 header[role="banner"] {
   margin: 0 0 2em 0; }
 
-div[role="main"] article footer, div[role="main"] .more {
-  padding-bottom: 1em; }
+div[role="main"] article, div[role="main"] section#projects {
+  margin-bottom: 2em; }
 
 section#comments, footer[role="contentinfo"] {
   margin-top: 2em; }
