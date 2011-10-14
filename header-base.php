@@ -5,7 +5,7 @@
 	<title><?php wp_title( '|', true, 'right' ); ?></title>
 
 	<meta name="viewport" content="width=device-width, minimum-scale=1.0">
-	<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Varela|Merriweather">
+	<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Varela+Round|Merriweather">
 	<link rel="stylesheet" href="<?php bloginfo( 'stylesheet_directory' ); ?>/css/normalize.css">
 	<link rel="stylesheet" href="<?php bloginfo( 'stylesheet_directory' ); ?>/css/base.css" media="screen, handheld">
 	<link rel="stylesheet" href="<?php bloginfo( 'stylesheet_directory' ); ?>/css/mobile.css" media="only screen and (min-width: 320px)">

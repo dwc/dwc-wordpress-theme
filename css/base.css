@@ -13,7 +13,8 @@ h6,
 input,
 select,
 textarea {
-  font-family: "Varela", sans-serif; }
+  font-family: "Varela Round", sans-serif;
+  font-weight: normal; }
 
 body {
   background-color: white;
@@ -58,7 +59,7 @@ div[role="main"] {
    */ }
   div[role="main"] article footer, div[role="main"] .more {
     text-align: right;
-    font-family: "Varela", sans-serif;
+    font-family: "Varela Round", sans-serif;
     font-size: 12px; }
   div[role="main"] .more {
     clear: both; }
@@ -70,7 +71,7 @@ div[role="main"] {
     div[role="main"] ol#portfolio li {
       margin-bottom: 2em; }
   div[role="main"] .paging {
-    font-family: "Varela", sans-serif;
+    font-family: "Varela Round", sans-serif;
     text-align: center;
     padding: 1em 0; }
     div[role="main"] .paging a:first-child {

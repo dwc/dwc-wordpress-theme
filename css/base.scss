@@ -9,7 +9,7 @@ $link_color: #5d8c16;
 $active_color: #b0d959;
 $border_color: #5e7348;
 $serif_font: 'Merriweather';
-$sans_serif_font: 'Varela';
+$sans_serif_font: 'Varela Round';
 
 body,
 button,
@@ -23,6 +23,7 @@ input,
 select,
 textarea {
     font-family: $sans_serif_font, sans-serif;
+    font-weight: normal;
 }
 
 body {
