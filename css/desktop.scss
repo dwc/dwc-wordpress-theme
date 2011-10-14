@@ -1,6 +1,8 @@
+$base_font_size: 2.2em;
+
 @import "mixins.scss";
 @include margins(6em);
-@include heading-sizes(2.2em);
+@include heading-sizes($base_font_size);
 
 .wrap {
     width: 916px;
@@ -11,6 +13,7 @@ header[role="banner"] {
     text-align: left;
 
     h1 {
+        font-size: $base_font_size;
         margin-bottom: 0.67em;
     }
 

@@ -1,5 +1,5 @@
 hr {
-  margin: 1em 10% 2em 10%; }
+  margin: 2em 10% 2em 10%; }
 
 header[role="banner"] {
   margin: 0 0 2em 0; }
@@ -11,13 +11,13 @@ section#comments, footer[role="contentinfo"] {
   margin-top: 2em; }
 
 h1 {
-  font-size: 1.5em; }
+  font-size: 2em; }
 
 article header h1, section h1, h2 {
-  font-size: 1.125em; }
+  font-size: 1.5em; }
 
 section article header h1, article > h2, section h2 {
-  font-size: 0.878em; }
+  font-size: 1.17em; }
 
 .wrap {
   margin: 0 0.5em; }
@@ -25,6 +25,7 @@ section article header h1, article > h2, section h2 {
 header[role="banner"] {
   text-align: center; }
   header[role="banner"] h1 {
+    font-size: 1.5em;
     margin-bottom: 0.5em; }
   header[role="banner"] nav ul li {
     margin-right: 15px; }

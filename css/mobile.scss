@@ -1,6 +1,6 @@
 @import "mixins.scss";
 @include margins(2em);
-@include heading-sizes(1.5em);
+@include heading-sizes(2em);
 
 .wrap {
     margin: 0 0.5em;
@@ -10,6 +10,7 @@ header[role="banner"] {
     text-align: center;
 
     h1 {
+        font-size: 1.5em;
         margin-bottom: 0.5em;
     }
 
