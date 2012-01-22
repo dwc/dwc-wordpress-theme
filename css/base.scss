@@ -142,6 +142,10 @@ div[role="main"] {
             margin-top: 2em;
             margin-bottom: 2em;
         }
+
+        div.ping {
+            font-family: $sans_serif_font, sans-serif;
+        }
     }
 
     #respond {

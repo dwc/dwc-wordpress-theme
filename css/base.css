@@ -88,6 +88,8 @@ div[role="main"] {
     div[role="main"] section#comments div.comment article {
       margin-top: 2em;
       margin-bottom: 2em; }
+    div[role="main"] section#comments div.ping {
+      font-family: "Varela Round", sans-serif; }
   div[role="main"] #respond {
     font-size: 0.8em; }
     div[role="main"] #respond form label {
