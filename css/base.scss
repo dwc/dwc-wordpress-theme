@@ -137,6 +137,11 @@ div[role="main"] {
         div.comment > div.comment {
             padding-left: 2em;
         }
+
+        div.comment article {
+            margin-top: 2em;
+            margin-bottom: 2em;
+        }
     }
 
     #respond {

@@ -4,7 +4,7 @@ hr {
 header[role="banner"] {
   margin: 0 0 6em 0; }
 
-div[role="main"] article, div[role="main"] section#projects {
+div[role="main"] {
   margin-bottom: 6em; }
 
 section#comments, footer[role="contentinfo"] {

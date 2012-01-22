@@ -8,9 +8,7 @@
     }
 
     div[role="main"] {
-        article, section#projects {
-            margin-bottom: $margin;
-        }
+        margin-bottom: $margin;
     }
 
     section#comments, footer[role="contentinfo"] {
