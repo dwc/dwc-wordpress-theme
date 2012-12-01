@@ -29,8 +29,6 @@ header[role="banner"] {
 }
 
 div[role="main"] {
-    clear: both;
-
     article {
         header {
             height: 2.2em;
@@ -95,14 +93,11 @@ div[role="main"] {
     }
 }
 
-@media screen and (min-height: 700px) {
-    div[role="main"] {
-        min-height: 700px;
-    }
-}
-
 footer[role="contentinfo"] {
+    position: fixed;
+    bottom: 0;
     text-align: left;
+    width: 100%;
 
     .widget {
         float: left;

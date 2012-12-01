@@ -8,10 +8,18 @@
     }
 
     div[role="main"] {
-        margin-bottom: $margin;
+        padding-bottom: $margin;
+
+        article {
+            margin-bottom: $margin;
+        }
+
+        section {
+            margin-bottom: $margin;
+        }
     }
 
-    section#comments, footer[role="contentinfo"] {
+    section#comments {
         margin-top: $margin;
     }
 }

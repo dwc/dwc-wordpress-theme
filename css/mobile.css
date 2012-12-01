@@ -5,9 +5,13 @@ header[role="banner"] {
   margin: 0 0 2em 0; }
 
 div[role="main"] {
-  margin-bottom: 2em; }
+  padding-bottom: 2em; }
+  div[role="main"] article {
+    margin-bottom: 2em; }
+  div[role="main"] section {
+    margin-bottom: 2em; }
 
-section#comments, footer[role="contentinfo"] {
+section#comments {
   margin-top: 2em; }
 
 h1 {

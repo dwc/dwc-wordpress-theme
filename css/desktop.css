@@ -5,9 +5,13 @@ header[role="banner"] {
   margin: 0 0 6em 0; }
 
 div[role="main"] {
-  margin-bottom: 6em; }
+  padding-bottom: 6em; }
+  div[role="main"] article {
+    margin-bottom: 6em; }
+  div[role="main"] section {
+    margin-bottom: 6em; }
 
-section#comments, footer[role="contentinfo"] {
+section#comments {
   margin-top: 6em; }
 
 h1 {
@@ -36,7 +40,6 @@ header[role="banner"] {
       margin-right: 30px; }
 
 div[role="main"] {
-  clear: both;
   /* Article headings within a section are smaller */ }
   div[role="main"] article header {
     height: 2.2em; }
@@ -67,11 +70,11 @@ div[role="main"] {
   div[role="main"] form input, div[role="main"] form textarea {
     width: 40%; }
 
-@media screen and (min-height: 700px) {
-  div[role="main"] {
-    min-height: 700px; } }
 footer[role="contentinfo"] {
-  text-align: left; }
+  position: fixed;
+  bottom: 0;
+  text-align: left;
+  width: 100%; }
   footer[role="contentinfo"] .widget {
     float: left; }
   footer[role="contentinfo"] .widget_links {
