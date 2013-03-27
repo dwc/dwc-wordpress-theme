@@ -1,0 +1,4 @@
+<FilesMatch "\.s[ac]ss$">
+	Order deny,allow
+	Deny from all
+</FilesMatch>
