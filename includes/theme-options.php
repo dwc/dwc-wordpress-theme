@@ -2,19 +2,19 @@
 /*
  * Register the options for this theme.
  */
-add_action( 'admin_init', 'dwc_setup_options'  );
+add_action( 'admin_init', 'dwc_setup_options' );
 
-function dwc_setup_options( ) {
-	register_setting( 'dwc_options', 'dwc_theme_options', 'dwc_validate_options'  );
+function dwc_setup_options() {
+	register_setting( 'dwc_options', 'dwc_theme_options', 'dwc_validate_options' );
 }
 
 /*
  * Register the options page for this theme.
  */
-add_action( 'admin_menu', 'dwc_add_options_page'  );
+add_action( 'admin_menu', 'dwc_add_options_page' );
 
-function dwc_add_options_page( ) {
-	add_theme_page( __( 'Theme Options', 'dwc'  ), __( 'Theme Options', 'dwc'  ), 'edit_theme_options', __FILE__, 'dwc_show_options'  );
+function dwc_add_options_page() {
+	add_theme_page( __( 'Theme Options', 'dwc' ), __( 'Theme Options', 'dwc' ), 'edit_theme_options', __FILE__, 'dwc_show_options' );
 }
 
 /*
