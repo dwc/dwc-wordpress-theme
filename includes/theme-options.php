@@ -46,6 +46,13 @@ function dwc_show_options() {
 						<span class="description"><?php _e( 'Enter your Google site verification key', 'dwc' ); ?></span>
 					</td>
 				</tr>
+				<tr valign="top">
+					<th scope="row"><label for="dwc_theme_options[bing_site_verification]"><?php _e( 'Bing Site Verification', 'dwc' ); ?></label></th>
+					<td>
+						<input type="text" name="dwc_theme_options[bing_site_verification]" value="<?php esc_attr_e( $options['bing_site_verification'] ); ?>" id="dwc_theme_options[bing_site_verification]" class="regular-text" />
+						<span class="description"><?php _e( 'Enter your Bing site verification key', 'dwc' ); ?></span>
+					</td>
+				</tr>
 			</table>
 
 			<h3>jQuery</h3>

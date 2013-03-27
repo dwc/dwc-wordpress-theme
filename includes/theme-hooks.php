@@ -124,6 +124,19 @@ function dwc_google_site_verification() {
 }
 
 /*
+ * Add the Bing site verification code to the header, if configured.
+ */
+add_filter( 'wp_head', 'dwc_bing_site_verification' );
+
+function dwc_bing_site_verification() {
+	if ( $bing_site_verification = dwc_get_option( 'bing_site_verification' ) ) {
+?>
+<meta name="msvalidate.01" content="<?php esc_attr_e( $bing_site_verification ); ?>" />
+<?php
+	}
+}
+
+/*
  * Add the OpenID code to the header, if configured.
  */
 add_filter( 'wp_head', 'dwc_openid' );
