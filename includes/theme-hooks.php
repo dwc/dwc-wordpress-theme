@@ -25,6 +25,19 @@ function dwc_setup_portfolio() {
 }
 
 /*
+ * Replace jQuery with Google Ajax Library version for better load time.
+ */
+add_action( 'init', 'dwc_replace_jquery' );
+
+function dwc_replace_jquery() {
+	if ( !is_admin() && $version = dwc_get_option( 'jquery_version' ) ) {
+		wp_deregister_script( 'jquery' );
+		wp_register_script( 'jquery', '//ajax.googleapis.com/ajax/libs/jquery/' . $version . '/jquery.min.js', false, $version );
+		wp_enqueue_script( 'jquery' );
+	}
+}
+
+/*
  * Register custom menus used by the theme, including the primary navigation and
  * the navigation in the footer.
  */

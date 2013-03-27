@@ -48,6 +48,18 @@ function dwc_show_options() {
 				</tr>
 			</table>
 
+			<h3>jQuery</h3>
+			<p>To load jQuery from <a href="https://developers.google.com/speed/libraries/">Google Host Libraries</a> set the version number (e.g. <tt>1.8.3</tt>) below.</p>
+			<table class="form-table">
+				<tr valign="top">
+					<th scope="row"><label for="dwc_theme_options[jquery_version]"><?php _e( 'jQuery Version', 'dwc' ); ?></label></th>
+					<td>
+						<input type="text" name="dwc_theme_options[jquery_version]" value="<?php esc_attr_e( $options['jquery_version'] ); ?>" id="dwc_theme_options[jquery_version]" class="regular-text" />
+						<span class="description"><?php _e( 'Version of jQuery to load', 'dwc' ); ?></span>
+					</td>
+				</tr>
+			</table>
+
 			<h3>OpenID</h3>
 			<table class="form-table">
 				<tr valign="top">
