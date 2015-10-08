@@ -11,10 +11,6 @@
 	<link rel="stylesheet" href="<?php bloginfo( 'stylesheet_directory' ); ?>/css/mobile.css" media="only screen and (min-width: 320px)">
 	<link rel="stylesheet" href="<?php bloginfo( 'stylesheet_directory' ); ?>/css/desktop.css" media="only screen and (min-width: 720px)">
 
-	<!--[if lt IE 9]>
-	<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
-	<![endif]-->
-
 	<?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
