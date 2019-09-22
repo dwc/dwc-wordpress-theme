@@ -163,6 +163,21 @@ function dwc_openid() {
 }
 
 /*
+ * Send a metric to Google Analytics when a contact form is submitted.
+ *
+ * https://contactform7.com/2017/06/07/on-sent-ok-is-deprecated/
+ */
+add_action( 'wp_footer', 'dwc_contact_form_analytics' );
+
+function dwc_contact_form_analytics() {
+?>
+<script type="text/javascript">
+document.addEventListener('wpcf7mailsent', function(event) { _gaq.push(['_trackEvent', 'Contact', 'Submit Form']); }, false);
+</script>
+<?php
+}
+
+/*
  * Make the automatic excerpt display cleaner.
  */
 add_filter( 'excerpt_more', 'dwc_auto_excerpt_more' );
