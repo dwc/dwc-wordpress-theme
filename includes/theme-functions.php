@@ -60,14 +60,6 @@ function dwc_comment( $comment, $args, $depth ) {
 	</article>
 <?php
 		break;
-
-		case 'pingback'  :
-		case 'trackback' :
-?>
-<div class="ping">
-	<p><?php _e( 'Pingback:', 'twentyten' ); ?> <?php comment_author_link(); ?><?php edit_comment_link( __('(Edit)', 'twentyten'), ' ' ); ?></p>
-<?php
-		break;
 	endswitch;
 }
 ?>
