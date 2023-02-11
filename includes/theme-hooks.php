@@ -95,16 +95,13 @@ add_filter( 'wp_head', 'dwc_google_analytics' );
 function dwc_google_analytics() {
 	if ( $google_analytics_account = dwc_get_option( 'google_analytics_account' ) ) {
 ?>
-<script type="text/javascript">
-	var _gaq = _gaq || [];
-	_gaq.push(['_setAccount', '<?php esc_attr_e( $google_analytics_account ); ?>']);
-	_gaq.push(['_trackPageview']);
-
-	(function() {
-		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-	})();
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=<?php esc_attr_e( $google_analytics_account ); ?>"></script>
+<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', '<?php esc_attr_e( $google_analytics_account ); ?>');
 </script>
 <?php
 	}
