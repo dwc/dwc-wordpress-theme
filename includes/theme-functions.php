@@ -41,7 +41,7 @@ function dwc_comment( $comment, $args, $depth ) {
 	$GLOBALS['comment'] = $comment;
 
 	switch ( $comment->comment_type ) :
-	case '' :
+	case 'comment' :
 ?>
 <div class="comment">
 	<article id="comment-<?php comment_ID(); ?>">
