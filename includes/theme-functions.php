@@ -38,8 +38,6 @@ function dwc_get_option( $option_name ) {
 }
 
 function dwc_comment( $comment, $args, $depth ) {
-	$GLOBALS['comment'] = $comment;
-
 	switch ( $comment->comment_type ) :
 	case 'comment' :
 ?>
