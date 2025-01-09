@@ -15,7 +15,7 @@
 			<h1>Comments</h1>
 		</header>
 
-		<?php wp_list_comments( array( 'style' => 'div', 'callback' => 'dwc_comment' ) ); ?>
+		<?php wp_list_comments( array( 'style' => 'div', 'type' => 'comment', 'callback' => 'dwc_comment' ) ); ?>
 
 		<?php if ( get_comment_pages_count() > 1 && get_option( 'page_comments' ) ) : ?>
 			<footer>
